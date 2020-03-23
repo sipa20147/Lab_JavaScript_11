@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script>
+    var t = false;
+    $(document).ready(function () {
+        $("#but").click(function () {
+          if (!t) {
+          $("#p1, #p2").animate({ right: "+=100px" }, "slow");
+          t=true;}
+        });
+      $("div").click(function () {
+        $(this).animate({ top: '30px' }, "slow");
+      });
+    }); 
+  </script>
+</head>
+<style>
+  .MsoNormal {
+    width: 390px;
+    //background: #61f068;
+    //border: 1px solid #333;
+    padding: 13px;
+    font-size: 18px;
+    word-break: break-all;
+    position: relative;
+    right: -100px;
+  }
+  .pic {
+    position:relative;	
+    right: -100px;
+ }
+</style>
+
+<body>
+  <button id ="but">Изменить положение рисунка №3 и №5</button>
+  <p class="MsoNormal">1. JavaScript реагирует на происходящие события.</p>
+  <div class="pic"><img src="PIC_02.jpg"></div>
+  <p class="MsoNormal">2. JavaScript может читать и писать HTML элементы.</p>
+  <div class="pic"><img src="PIC_03.jpg"></div>
+  <p id="p1" class="MsoNormal">3. JavaScript может использоваться для проверки данных.</p>
+  <div id="div1" class="pic"><img src="PIC_04.jpg"></div>
+  <p class="MsoNormal">4. JavaScript может использоваться для создание cookies.</p>
+  <div class="pic"><img src="PIC_05.jpg"></div>
+  <p id="p2" class="MsoNormal">5. JavaScript может добавлять различные эффекты анимации.</p>
+  <div id="div2" class="pic"><img src="PIC_06.jpg"></div>
+  <p class="MsoNormal">6. JavaScript может определять браузер.</p>
+
+</body>
+
+</html>
+
+
